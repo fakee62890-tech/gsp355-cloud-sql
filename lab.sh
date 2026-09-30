@@ -20,7 +20,8 @@ printf 'Do not paste Qwiklabs passwords into GitHub; this script only uses them 
 
 read -r -p 'Postgres source VM name [postgres-vm]: ' SOURCE_VM
 SOURCE_VM="${SOURCE_VM:-postgresql-vm}"
-read -r -p 'Source VM zone (example: europe-west1-d): ' SOURCE_ZONE
+SOURCE_ZONE="${SOURCE_ZONE:-europe-west1-d}"
+read -r -p 'Source VM zone [europe-west1-d]: ' SOURCE_ZONE
 read -r -p 'DMS region [europe-west1]: ' REGION
 REGION="${REGION:-europe-west1}"
 read -r -p 'Cloud SQL destination instance [postgres14-x5u2c]: ' SQL_INSTANCE
