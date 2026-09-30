@@ -19,8 +19,8 @@ printf 'Active project: %s\n' "$PROJECT_ID"
 printf 'Do not paste Qwiklabs passwords into GitHub; this script only uses them at runtime.\n\n'
 
 read -r -p 'Postgres source VM name [postgres-vm]: ' SOURCE_VM
-SOURCE_VM="${SOURCE_VM:-postgres-vm}"
-read -r -p 'Source VM zone (example: europe-west1-b): ' SOURCE_ZONE
+SOURCE_VM="${SOURCE_VM:-postgresql-vm}"
+read -r -p 'Source VM zone (example: europe-west1-d): ' SOURCE_ZONE
 read -r -p 'DMS region [europe-west1]: ' REGION
 REGION="${REGION:-europe-west1}"
 read -r -p 'Cloud SQL destination instance [postgres14-x5u2c]: ' SQL_INSTANCE
