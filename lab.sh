@@ -18,10 +18,10 @@ printf '\n\033[1;35mGSP355 Cloud SQL for PostgreSQL Challenge Lab\033[0m\n'
 printf 'Active project: %s\n' "$PROJECT_ID"
 printf 'Do not paste Qwiklabs passwords into GitHub; this script only uses them at runtime.\n\n'
 
-read -r -p 'Postgres source VM name [postgres-vm]: ' SOURCE_VM
+read -r -p 'Postgres source VM name [postgresql-vm]: ' SOURCE_VM
 SOURCE_VM="${SOURCE_VM:-postgresql-vm}"
-SOURCE_ZONE="${SOURCE_ZONE:-europe-west1-d}"
 read -r -p 'Source VM zone [europe-west1-d]: ' SOURCE_ZONE
+SOURCE_ZONE="${SOURCE_ZONE:-europe-west1-d}"
 read -r -p 'DMS region [europe-west1]: ' REGION
 REGION="${REGION:-europe-west1}"
 read -r -p 'Cloud SQL destination instance [postgres14-x5u2c]: ' SQL_INSTANCE
