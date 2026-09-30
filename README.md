@@ -5,7 +5,7 @@ This repository contains a secret-free Cloud Shell helper for the Google Cloud C
 ## Three-command Cloud Shell flow
 
 ```bash
-curl -LO https://raw.githubusercontent.com/REPLACE_OWNER/gsp355-cloud-sql/main/lab.sh
+curl -LO https://raw.githubusercontent.com/fakee62890-tech/gsp355-cloud-sql/main/lab.sh
 sudo chmod +x lab.sh
 ./lab.sh
 ```
