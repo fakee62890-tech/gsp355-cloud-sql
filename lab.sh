@@ -84,7 +84,7 @@ PROFILE_ID="gsp355-postgres-source"
 if ! gcloud database-migration connection-profiles describe "$PROFILE_ID" --region="$REGION" >/dev/null 2>&1; then
   gcloud database-migration connection-profiles create postgresql "$PROFILE_ID" \
     --region="$REGION" --display-name="$PROFILE_ID" --host="$SOURCE_INTERNAL_IP" \
-    --port=5432 --username="$MIGRATION_USER" --password="$MIGRATION_PASSWORD"
+    --port=5432 --database=orders --username="$MIGRATION_USER" --password="$MIGRATION_PASSWORD"
 else
   warn "Connection profile $PROFILE_ID already exists; reusing it."
 fi
